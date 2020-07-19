@@ -1,0 +1,2866 @@
+{
+    "BotPosition": {
+        "cpp_type": "BotPosition", 
+        "members": [
+            {
+                "description": "TODO", 
+                "id": "x", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "y", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "z", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "TODO", 
+                "hidden": true, 
+                "id": "a", 
+                "max": 10, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "TODO", 
+                "hidden": true, 
+                "id": "b", 
+                "max": 10, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }
+        ], 
+        "mode": "aggregate"
+    }, 
+    "Categories": [
+        {
+            "description": "TODO", 
+            "id": "raft", 
+            "name": "Raft"
+        }, 
+        {
+            "description": "TODO", 
+            "id": "supportsAndBridging", 
+            "name": "Supports and Bridging"
+        }, 
+        {
+            "description": "TODO", 
+            "id": "infill", 
+            "name": "Infill"
+        }, 
+        {
+            "description": "TODO", 
+            "id": "modelProperties", 
+            "name": "Model Properties"
+        }, 
+        {
+            "description": "TODO", 
+            "id": "deviceSettings", 
+            "name": "Device Settings"
+        }, 
+        {
+            "description": "TODO", 
+            "id": "multiMaterialPrinting", 
+            "name": "Multi-Material Printing"
+        }, 
+        {
+            "description": "TODO", 
+            "id": "extrusionProfiles", 
+            "name": "Extrusion Speeds"
+        }
+    ], 
+    "Extruder": {
+        "categories": [
+            "extruderProperties"
+        ], 
+        "members": [
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "description": "Diameter of the plastic filament you will be using. If this value is too low, your extruder will extrude too much plastic. If it is too high, your extruder will extrude too little.", 
+                "id": "feedDiameter", 
+                "max": 2.25, 
+                "min": 1.25, 
+                "name": "Filament Diameter", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "group": "Dual Extrusion Settings", 
+                "id": "toolchangeRetractDistance", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Toolchange Retract Distance", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "group": "Dual Extrusion Settings", 
+                "id": "toolchangeRetractRate", 
+                "max": 100.0, 
+                "min": 0.0, 
+                "name": "Toolchange Retract Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "group": "Dual Extrusion Settings", 
+                "id": "toolchangeRestartDistance", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Toolchange Restart Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "group": "Dual Extrusion Settings", 
+                "id": "toolchangeRestartRate", 
+                "max": 100.0, 
+                "min": 0.0, 
+                "name": "Toolchange Restart Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "layerHeight", 
+                "max": 0.4, 
+                "min": 0.05, 
+                "name": "Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "This number compensates for differences between the volume of plastic going into the extruder and the volume of plastic extruded from the nozzle. Factors may include filament density and die swell.", 
+                "id": "feedstockMultiplier", 
+                "max": 4.0, 
+                "min": 0.1, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Specify the diameter of the nozzle being used on this extruder", 
+                "id": "nozzleDiameter", 
+                "max": 1.6, 
+                "min": 0.0, 
+                "name": "Nozzle Diameter", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "description": "Length of filament retracted before travel moves. Retracting filament before travel moves helps to prevent stringing.", 
+                "id": "retractDistance", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Retraction Distance", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "description": "Rate at which your extruder will retract filament before travel moves", 
+                "id": "retractRate", 
+                "max": 100.0, 
+                "min": 0.0, 
+                "name": "Retraction Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "Length of filament retracted before travel moves. Retracting filament before travel moves helps to prevent stringing.", 
+                "id": "retractDistance2", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "Rate at which your extruder will pull filament in during retraction", 
+                "id": "retractRate2", 
+                "max": 100.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "description": "Extrusion rate when the extruder restarts after a retraction", 
+                "id": "restartRate", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Restart Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Rate at which your extruder will pull filament in during retraction", 
+                "id": "restartRate2", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "description": "Amount of filament extruded after a retraction. Positive values will push out extra plastic, which helps eliminate gaps. Negative values will push out less plastic, which helps eliminate blobs.", 
+                "id": "restartExtraDistance", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Extra Restart Distance", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "This setting allows you to add a bit more after the extra restart, and do at a different rate.  This is tied to restartExtraRate2", 
+                "id": "restartExtraDistance2", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "description": "Extrusion rate for the amount of filament set in Extra Restart Distance", 
+                "id": "restartExtraRate", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Extra Restart Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Rate at which your extruder will pull filament in during retraction", 
+                "id": "restartExtraRate2", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "default": 0.0, 
+                "description": "Distance before a retract when extrusion should stop to allow leaking plastic to fill the gap up to the retract. Set to 0 to disable oozing.", 
+                "id": "oozeFeedstockDistance", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "Ooze Distance", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "extruderProperties"
+                ], 
+                "default": 0.0, 
+                "description": "Extrude at least this much filament between a restart and an ooze", 
+                "id": "preOozeFeedstockDistance", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "Minimum Ooze Path Length", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Maximum height of infill layers.  This setting will be rounded to an integer multiple of the model layer height.", 
+                "id": "maxSparseFillThickness", 
+                "max": 1.6, 
+                "min": 0.0, 
+                "name": "Infill Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "First model layer extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "firstLayerExtrusionProfile", 
+                "name": "First Layer Without Raft", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }, 
+            {
+                "description": "First model layer extrusion characteristics when printed on a raft -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "firstLayerRaftExtrusionProfile", 
+                "name": "First Layer With Raft", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }, 
+            {
+                "description": "Inset extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "insetsExtrusionProfile", 
+                "name": "Insets", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }, 
+            {
+                "description": "Infill extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "infillsExtrusionProfile", 
+                "name": "Infill", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }, 
+            {
+                "default": "", 
+                "description": "TODO", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "roofSurfaceFillsExtrusionProfile", 
+                "name": "Roof Surface", 
+                "type": "string"
+            }, 
+            {
+                "default": "", 
+                "description": "TODO", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "floorSurfaceFillsExtrusionProfile", 
+                "name": "Floor Surface", 
+                "type": "string"
+            }, 
+            {
+                "default": "", 
+                "description": "TODO", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "sparseRoofSurfaceFillsExtrusionProfile", 
+                "name": "Sparse Roof Surface", 
+                "type": "string"
+            }, 
+            {
+                "description": "Outline extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "outlinesExtrusionProfile", 
+                "name": "Outlines", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }, 
+            {
+                "description": "First raft layer extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "raftBaseExtrusionProfile", 
+                "name": "Raft Base Layer", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }, 
+            {
+                "description": "Raft extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "raftExtrusionProfile", 
+                "name": "Raft", 
+                "type": "string"
+            }, 
+            {
+                "description": "Bridges extrusion characteristics -- The selectable settings are defined in 'Extrusion Profiles'", 
+                "group": "Advanced Extrusion Profiles", 
+                "id": "bridgesExtrusionProfile", 
+                "name": "Bridges", 
+                "type": "string", 
+                "widget": "extrusionProfile"
+            }
+        ], 
+        "mode": "aggregate"
+    }, 
+    "ExtruderVector": {
+        "cpp_type": "std::vector<Extruder>", 
+        "element_type": "Extruder", 
+        "json_type": "array", 
+        "mode": "specialization"
+    }, 
+    "Extrusion": {
+        "members": [
+            {
+                "categories": [
+                    "Extruder"
+                ], 
+                "description": "Print Temperature", 
+                "id": "temperature", 
+                "max": 255, 
+                "min": 0, 
+                "name": "Print Temperature", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "unit": "\u00b0C", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "Extruder"
+                ], 
+                "description": "Print speed during extrusion", 
+                "id": "feedrate", 
+                "max": 175, 
+                "min": 0, 
+                "name": "Print Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "Extruder"
+                ], 
+                "description": "Fan Cooling Speed", 
+                "id": "fanSpeed", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Filament Cooling Fan Speed", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "oozeFeedstockDistance", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "id": "allowLeakyConnections", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "id": "allowShortLeakyConnections", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "id": "allowSloppyConnections", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "id": "allowAcceleration", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean"
+            }, 
+            {
+                "default": "", 
+                "description": "TODO", 
+                "id": "extrusionModel", 
+                "name": "TODO - WidgetName", 
+                "type": "string"
+            }, 
+            {
+                "debug_value": 1.0, 
+                "description": "Increases or decreases the amount of extruded plastic computed from the extrusion model by a constant factor.  Useful for debugging.", 
+                "id": "extrusionVolumeMultiplier", 
+                "name": "TODO - WidgetName", 
+                "type": "Scalar"
+            }
+        ], 
+        "mode": "aggregate"
+    }, 
+    "ExtrusionMap": {
+        "cpp_type": "std::map<std::string, Extrusion>", 
+        "json_type": "object", 
+        "key_type": "string", 
+        "mode": "specialization", 
+        "value_type": "Extrusion"
+    }, 
+    "FillProfile": {
+        "members": [
+            {
+                "default": "linear", 
+                "id": "pattern", 
+                "type": "string", 
+                "validStrings": [
+                    "linear", 
+                    "hexagonal", 
+                    "moroccanstar", 
+                    "catfill", 
+                    "sharkfill", 
+                    "sunglassesfill", 
+                    "hilbert_fill", 
+                    "diamond", 
+                    "diamond (fast)", 
+                    "raft_base_fill", 
+                    "local_no_warp", 
+                    "no_warp_2_passes", 
+                    "no_warp_4_passes", 
+                    "square_fill"
+                ]
+            }, 
+            {
+                "default": 1.0, 
+                "id": "density", 
+                "max": 1, 
+                "min": 0, 
+                "step": 0.01, 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 1.0, 
+                "id": "fillPathWidthMultiplier", 
+                "max": 1, 
+                "min": 0, 
+                "step": 0.01, 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 0, 
+                "description": "Initial pattern orientation", 
+                "id": "orientationOffset", 
+                "type": "integer"
+            }, 
+            {
+                "default": 0, 
+                "description": "Change in the pattern orientation in consecutive layers", 
+                "id": "orientationInterval", 
+                "type": "integer"
+            }, 
+            {
+                "default": 0, 
+                "description": "Orientation at which the pattern repeats", 
+                "id": "orientationRange", 
+                "type": "integer"
+            }, 
+            {
+                "default": false, 
+                "description": "If true, pattern fill direction is always consistent between layers.", 
+                "id": "fixedDirection", 
+                "type": "boolean"
+            }, 
+            {
+                "default": false, 
+                "description": "If true, pattern fill is always ordered in a consistent way between layers.", 
+                "id": "fixedOrder", 
+                "type": "boolean"
+            }, 
+            {
+                "default": "", 
+                "description": "Fill group to use for this fill region, unless overridden by fill groups specified by the pattern itself", 
+                "id": "fillGroup", 
+                "type": "string"
+            }, 
+            {
+                "default": 0.4, 
+                "description": "Distance it takes to make the 90 degree turn between two sides of the diamond fill pattern", 
+                "id": "diamondFillTurnDistance", 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 0.1, 
+                "description": "Overlap distance between neighboring columns of diamonds", 
+                "id": "diamondFillZigZagOverlap", 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 0.7, 
+                "description": "Sets the spacing between the lines of a raft's base layer", 
+                "id": "raftBaseRunGapRatio", 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 15.0, 
+                "description": "Sets the length of the zig-zag pattern that forms the base of a raft", 
+                "id": "raftBaseRunLength", 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 10.0, 
+                "description": "Distance of a lightning fill bolt zig-zag", 
+                "id": "lightningFillZigDistance", 
+                "type": "Scalar"
+            }
+        ], 
+        "mode": "aggregate"
+    }, 
+    "FillProfileMap": {
+        "cpp_type": "std::map<std::string, FillProfile>", 
+        "json_type": "object", 
+        "key_type": "string", 
+        "mode": "specialization", 
+        "value_type": "FillProfile"
+    }, 
+    "Groups": [
+        {
+            "description": "TODO", 
+            "name": "Advanced Extrusion Profiles"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Purge Wall Settings"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Support"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Bridging"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Base Layers"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Interface Layers"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Subsurface Layers"
+        }, 
+        {
+            "description": "TODO", 
+            "name": "Surface Layers"
+        }
+    ], 
+    "Scalar": {
+        "__description__": "Miracle Grue internal number format", 
+        "cpp_type": "Scalar", 
+        "json_type": "number", 
+        "mode": "primitive"
+    }, 
+    "__top__": {
+        "members": [
+            {
+                "default": "", 
+                "description": "This setting is provided to allow users to save details for each profile they create", 
+                "id": "description", 
+                "type": "string"
+            }, 
+            {
+                "categories": [
+                    "infill"
+                ], 
+                "description": "Specifies how solid the infill is. A setting of 0 results in a hollow object and a setting of 1 results in a solid one.", 
+                "id": "infillDensity", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Infill Density", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "%", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "description": "Height of each printed layer", 
+                "id": "layerHeight", 
+                "max": 0.4, 
+                "min": 0.05, 
+                "name": "Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "baseLayerHeight", 
+                "max": 1.6, 
+                "min": 0.05, 
+                "name": "Base layer height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "infill"
+                ], 
+                "description": "Sets the maximum height of infill layers.  This setting will be rounded to an integer multiple of the model layer height.", 
+                "id": "maxSparseFillThickness", 
+                "max": 1.6, 
+                "min": 0.0, 
+                "name": "Infill Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "description": "Number of outlines printed for each island within a layer. If any section of your model does not have room for this many shells, that section will be printed with the number that does fit.", 
+                "id": "numberOfShells", 
+                "max": 50000, 
+                "min": 1, 
+                "name": "Number of Shells", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "When true, do not extrude when transitioning from one shell to another. This helps reduce blobbing with large numbers of shells", 
+                "id": "shellsLeakyConnections", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "This defines the space between each pair of adjacent shells. The number is a multiplier of the extrusion width. Set this under 1 to have the insets overlap, and over one for gaps between the insets. In general, it's best to have the insets overlap slightly.", 
+                "id": "insetDistanceMultiplier", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Sets how far the infill overlaps the innermost shell. A lower setting will result in more overlap.", 
+                "id": "infillShellSpacingMultiplier", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "When true, do not extrude between adjacent infill lines. Which lines are considered adjacent is determined by adjacentFillLeakyDistanceRatio.", 
+                "id": "adjacentFillLeakyConnections", 
+                "type": "boolean"
+            }, 
+            {
+                "dependency": "adjacentFillLeakyConnections", 
+                "description": "Two fill lines are considered adjacent when the connection between them is shorter than the product of this value and the extrusion width.", 
+                "id": "adjacentFillLeakyDistanceRatio", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar"
+            }, 
+            {
+                "default": 10.0, 
+                "description": "Maximum length of an extrusion made to avoid retraction. If avoiding a retraction would require a longer extrusion, we will retract and go to the closest object instead.", 
+                "id": "maxConnectionLength", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Maximum Connection Length", 
+                "step": 0.5, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "description": "Thickness of your model's solid roof", 
+                "id": "roofThickness", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Roof Thickness", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of the roof surface layers of the model in mm.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "roofSurfaceThickness", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of solid layers under roof surface in mm.  Overrides roofThickness if larger.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "roofSolidThickness", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of the floor surface layers of the model in mm.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "floorSurfaceThickness", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "description": "Thickness of your model's solid floor", 
+                "id": "floorThickness", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Floor Thickness", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of solid layers over floor surface in mm.  Overrides floorThickness if larger.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "floorSolidThickness", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Extending roofs inside solid regions to support shells from layers above can help shells on sloped surfaces stay in place", 
+                "id": "roofAnchorMargin", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "description": "Features smaller than this area in square millimeters are removed", 
+                "id": "coarseness", 
+                "max": 0.01, 
+                "min": 0.0, 
+                "name": "Coarseness", 
+                "step": 1e-05, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 1.0, 
+                "description": "Minimum reduction in total area required for adding a thick sparse infill layer", 
+                "id": "minThickInfillImprovement", 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "gridSpacingMultiplier", 
+                "max": 1.5, 
+                "min": 0.5, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "doExternalSpurs", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "doInternalSpurs", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "minSpurWidth", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "maxSpurWidth", 
+                "max": 1.0, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "minSpurLength", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "spurOverlap", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "description": "Single or right side extruder temperature", 
+                "id": "extruderTemp0", 
+                "max": 255, 
+                "min": 0, 
+                "name": "Extruder Temperature", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "unit": "\u00b0C", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "default": -1, 
+                "description": "Left side extruder temperature", 
+                "id": "extruderTemp1", 
+                "max": 255, 
+                "min": 0, 
+                "name": "Extruder Temperature Left", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "unit": "\u00b0C", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "default": 0, 
+                "description": "Heated chamber temperature", 
+                "id": "chamberTemp", 
+                "max": 70, 
+                "min": 0, 
+                "name": "Chamber Temperature", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "unit": "\u00b0C", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "default": 0, 
+                "description": "Heated platform temperature", 
+                "id": "platformTemp", 
+                "max": 130, 
+                "min": 0, 
+                "name": "Platform Temperature", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "unit": "\u00b0C", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "description": "Speed at which the extruder travels along the horizontal plane when it is not extruding plastic", 
+                "id": "travelSpeedXY", 
+                "max": 175.0, 
+                "min": 0.0, 
+                "name": "Travel Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "description": "Build plate speed as it moves down between layers", 
+                "id": "travelSpeedZ", 
+                "max": 50.0, 
+                "min": 0, 
+                "name": "Z-axis Travel Speed", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Select to print your model on a raft", 
+                "id": "doRaft", 
+                "name": "Raft", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Distance above the raft at which your object is printed. Smaller values may make the raft harder to remove. Higher values may decrease the quality of your object's bottom surface.", 
+                "id": "raftModelSpacing", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Raft to Model Spacing", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Sets how far above the raft the supports object is printed. Smaller values may make the support stick more firmly to the raft.  Defaults to the raft model spacing if not set.", 
+                "id": "raftSupportSpacing", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Raft-Support Spacing", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Distance between the outer edge of your object and the edge of the raft", 
+                "id": "raftOutset", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Raft Margin", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "Additional offset between the extruder and build plate when a raft is being printed", 
+                "id": "raftExtraOffset", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Additional Raft Offset", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "The base layer of the raft is printed slowly, with thicker extrusion. This setting specifies how many base layers are printed. More layers can help the raft stick if your build platform is very uneven.", 
+                "group": "Base Layers", 
+                "id": "raftBaseLayers", 
+                "max": 20, 
+                "min": 0, 
+                "name": "Number of Base Layers", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Height of raft's base layer(s). This value should be much higher than your normal layer height.", 
+                "group": "Base Layers", 
+                "id": "raftBaseThickness", 
+                "max": 1.6, 
+                "min": 0.0, 
+                "name": "Base Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Extrusion width on the raft's base layer(s). This value should be much wider than your nozzle width.", 
+                "group": "Base Layers", 
+                "id": "raftBaseWidth", 
+                "max": 4.0, 
+                "min": 0.0, 
+                "name": "Base Extrusion Width", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Lines of the raft's base layer(s) will be printed closer together at higher densities and farther apart at lower densities. Values between 0.7 and 0.9 are recommended.", 
+                "group": "Base Layers", 
+                "id": "raftBaseDensity", 
+                "max": 1.0, 
+                "min": 0, 
+                "name": "Base Layer Density", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Angle of the raft's base layer(s), measured counterclockwise from the positive X axis", 
+                "group": "Base Layers", 
+                "id": "raftBaseAngle", 
+                "max": 180, 
+                "min": 0, 
+                "name": "Base Layer Angle", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "degree", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Length of the zig-zag pattern that forms the raft's base layer(s)", 
+                "group": "Base Layers", 
+                "id": "raftBaseRunLength", 
+                "max": 400.0, 
+                "min": 0.0, 
+                "name": "Base Pattern Length", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Spacing between the lines of a raft's base layer(s)", 
+                "group": "Base Layers", 
+                "id": "raftBaseRunGapRatio", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "Base Pattern Spacing", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "default": 0, 
+                "description": "Gaps in the raft smaller than this minimum will be filled in, reducing raft complexity", 
+                "group": "Base Layers", 
+                "id": "minRaftBaseGap", 
+                "max": 20.0, 
+                "min": 0.0, 
+                "name": "Minimum Base Pattern Gap", 
+                "step": 0.5, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "The interface is the middle section between the raft base and the raft surface. This setting specifies how many interface layers are printed.", 
+                "group": "Interface Layers", 
+                "id": "raftInterfaceLayers", 
+                "max": 20, 
+                "min": 0, 
+                "name": "Number of Interface Layers", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Height of raft's interface layer(s)", 
+                "group": "Interface Layers", 
+                "id": "raftInterfaceThickness", 
+                "max": 1.6, 
+                "min": 0.1, 
+                "name": "Interface Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Extrusion width on the raft's interface layer(s). This should be equal to or greater than the nozzle width.", 
+                "group": "Interface Layers", 
+                "id": "raftInterfaceWidth", 
+                "max": 0.6, 
+                "min": 0.1, 
+                "name": "Interface Extrusion Width", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Lines of the raft's interface layer(s) will be printed closer together at higher densities and farther apart at lower densities. Values between 0.2 and 0.5 are recommended.", 
+                "group": "Interface Layers", 
+                "id": "raftInterfaceDensity", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Interface Layer Density", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Angle of the raft's interface layer(s), measured counterclockwise from the positive X axis", 
+                "group": "Interface Layers", 
+                "id": "raftInterfaceAngle", 
+                "max": 180, 
+                "min": 0, 
+                "name": "Interface Layer Angle", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "degree", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Your printed object will rest on the raft's surface layers. This setting specifies how many surface layers are printed.", 
+                "group": "Surface Layers", 
+                "id": "raftSurfaceLayers", 
+                "max": 20, 
+                "min": 0, 
+                "name": "Number of Surface Layers", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "debug_value": 0, 
+                "description": "Your surface layers will rest on top of the raft's subsurface layers. This setting specifies how many sub surface layers are printed.", 
+                "id": "raftSubSurfaceLayers", 
+                "max": 20, 
+                "min": 0, 
+                "step": 1, 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "debug_value": 0.27, 
+                "description": "Your surface layers will rest on top of the subsurface layers. This setting specifies how thick sub surface layers are.", 
+                "id": "raftSubSurfaceThickness", 
+                "type": "Scalar"
+            }, 
+            {
+                "debug_value": 0.0, 
+                "description": "Your sub surface layers will rest on top of the interface layers. This setting specifies the offset between the two.", 
+                "id": "raftSubSurfaceInterfaceOffset", 
+                "type": "Scalar"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Height of raft's surface layer(s). Values close to the default layer height are recommended.", 
+                "group": "Surface Layers", 
+                "id": "raftSurfaceThickness", 
+                "max": 1.6, 
+                "min": 0.1, 
+                "name": "Surface Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "description": "Angle of the raft surface layer(s), measured counterclockwise from the positive X axis", 
+                "group": "Surface Layers", 
+                "id": "raftSurfaceAngle", 
+                "max": 180, 
+                "min": 0, 
+                "name": "Surface Layer Angle", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "degree", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "debug_value": 0, 
+                "description": "Number of shells printed for raft's base layer(s). Additional shells may make the raft easier to remove.", 
+                "group": "Base Layers", 
+                "id": "raftBaseShells", 
+                "max": 50000, 
+                "min": 0, 
+                "name": "Number of Base Layer Shells", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "raft"
+                ], 
+                "default": 0, 
+                "description": "Number of shells printed for raft's surface layer(s). Additional shells may make the raft easier to remove.", 
+                "group": "Surface Layers", 
+                "id": "raftSurfaceShells", 
+                "max": 50000, 
+                "min": 0, 
+                "name": "Number of Surface Layer Shells", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "Affects the spacing between the surface fill and the innermost shell. For more overlap, use a lower value.", 
+                "group": "Surface Layers", 
+                "id": "raftSurfaceShellSpacingMultiplier", 
+                "max": 1.5, 
+                "min": 0.5, 
+                "name": "Surface Fill to Shell Overlap", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "raftAligned", 
+                "max": 100, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "default": false, 
+                "description": "Select to print your model with easy to remove supports", 
+                "group": "Support", 
+                "gui_dependency": "doSupport", 
+                "gui_logic": "true", 
+                "id": "doBreakawaySupport", 
+                "name": "Breakaway Support", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Sets the layer height used for support structures. This layer height can be greater than the model layer height for faster printing.", 
+                "group": "Support", 
+                "id": "supportLayerHeight", 
+                "max": 0.4, 
+                "min": 0.05, 
+                "name": "Support Layer Height", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Support structures will be printed under overhangs where the angle is a greater number of degress than the value set here. A value of 0 will result in support everywhere. A value of 90 will result in no support.", 
+                "group": "Support", 
+                "id": "supportAngle", 
+                "max": 90, 
+                "min": 0, 
+                "name": "Support Angle", 
+                "step": 1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Distance between the top-most layer of supports and the printed object in the horizontal plane", 
+                "group": "Support", 
+                "id": "supportRoofModelSpacing", 
+                "max": 2.0, 
+                "min": 0.0, 
+                "name": "Support Roof to Model Spacing", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Distance between supports and the printed object in the horizontal plane", 
+                "group": "Support", 
+                "id": "supportModelSpacing", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Support to Model Spacing", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Distance between the edge of the object and the outer edges of the supports. If it is set to 0, support structures will not extend farther than any supported overhang.", 
+                "group": "Support", 
+                "id": "supportExtraDistance", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Support Margin", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Lines of the support structures will be printed closer together at higher densities and farther apart at lower densities. A value of 1.0 will result in solid support structures.", 
+                "group": "Support", 
+                "gui_dependency": "doBreakawaySupport", 
+                "gui_logic": "false", 
+                "id": "supportDensity", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Support Density", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "default": false, 
+                "description": "Select to print with an earlier style of support structures that surround your object, instead of the current minimal support", 
+                "group": "Support", 
+                "gui_dependency": "doBreakawaySupport", 
+                "gui_logic": "false", 
+                "id": "supportExcessive", 
+                "name": "Extra Support", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "default": false, 
+                "description": "Select for parallel walls of support. Deselect for stronger, criss-crossing support structures.", 
+                "group": "Support", 
+                "gui_dependency": "doBreakawaySupport", 
+                "gui_logic": "false", 
+                "id": "supportAligned", 
+                "name": "Align Support", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Select for less connected support structures which are easier to remove", 
+                "group": "Support", 
+                "id": "supportLeakyConnections", 
+                "name": "Leaky Connections", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "debug_value": 0.0, 
+                "description": "Stop support slightly before model floors to allow for easier breakaway.", 
+                "group": "Support", 
+                "id": "supportCutout", 
+                "name": "Support Cutout", 
+                "type": "Scalar"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "debug_value": 0.0, 
+                "description": "Extra x/y amount to clear support around model floors when support cutouts are used.", 
+                "group": "Support", 
+                "id": "supportCutoutExtraDistance", 
+                "name": "Support Cutout Extra Distance", 
+                "type": "Scalar"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Select to print your model with automatically generated support structures", 
+                "group": "Support", 
+                "id": "doSupport", 
+                "name": "Support", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "Control the additional droop distance between support roofs and the exposed underside features of your model. Smaller values make the support bind to the model more tightly, but may produce more precise model floors.  Higher values make the support easier to remove, but might worsen the underside surface quality.", 
+                "id": "supportBreakawayModelFloorSpacing", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Control the additional droop distance between support floors and the exposed upper layers of your model. Smaller values make the support bind to the model more tightly, higher values make the support easier to remove but less precise and stable.", 
+                "id": "supportBreakawayModelRoofSpacing", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Pushes the bounds of the drooped breakaway portion of the model into or away from the supported regions of the model.  By default the breakaway is directly adjacent to the supported model edge.  Sensible values here are +-1 layer width - large insets will cause bad model layer adhesion, large outsets can cause unsupported or non-breakaway model floors.", 
+                "id": "supportBreakawayModelOffset", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of the roof surface layers of the support in mm.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "supportRoofSurfaceThickness", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of solid layers under support roof surface in mm.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "supportRoofSolidThickness", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of the floor surface layers of the support in mm.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "supportFloorSurfaceThickness", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0, 
+                "description": "Thickness of solid layers over support floor surface in mm.  If not a multiple of layer height, the distance is rounded up to the next layer.", 
+                "id": "supportFloorSolidThickness", 
+                "max": 100, 
+                "min": 0, 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "description": "Support fill profiles for surface, solid, and sparse", 
+                "id": "supportFillProfiles", 
+                "type": "FillProfileMap"
+            }, 
+            {
+                "default": 0, 
+                "description": "For a connection to be made leaky, the lengths of the extrusion paths immediately before and after must exceed this value. This applies to connections between shells, support, and infill", 
+                "id": "leakyConnectionsAdjacentDistance", 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "description": "Model fill profiles for surface, solid, and sparse", 
+                "id": "modelFillProfiles", 
+                "type": "FillProfileMap"
+            }, 
+            {
+                "description": "Model fill profiles for surface, solid, and sparse", 
+                "id": "raftFillProfiles", 
+                "type": "FillProfileMap"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Extruder used to print support structures on a dual extrusion print when Mixed Material Support is turned off. In this selector, 0 is the Right extruder and 1 is the Left extruder.", 
+                "gui_dependency": "doMixedSupport", 
+                "gui_logic": "false", 
+                "id": "defaultSupportMaterial", 
+                "max": 1, 
+                "min": 0, 
+                "name": "Support Material Extruder", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Print mixed-material support structures, where each part of the model is supported by structures printed in the same material", 
+                "id": "doMixedSupport", 
+                "name": "Mixed Material Support", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Extruder used to print the raft on a dual extrusion print when Mixed Material Raft is turned off. In this selector, 0 is the Right extruder and 1 is the Left extruder", 
+                "gui_dependency": "doMixedRaft", 
+                "gui_logic": "false", 
+                "id": "defaultRaftMaterial", 
+                "max": 1, 
+                "min": 0, 
+                "name": "Raft Material Extruder", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Print a mixed-material raft, where each part of the model rests on a section of raft printed in the same material", 
+                "id": "doMixedRaft", 
+                "name": "Mixed Material Raft", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Minimum distance between the edge of your model and the purge wall", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallModelOffset", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Wall to Model Spacing", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Distance between adjacent purge walls. Distances between 1 and 3 mm are recommended.", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallSpacing", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "Wall to Wall Spacing", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Extrusion width for the main part of the purge wall", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallWidth", 
+                "max": 2, 
+                "min": 0, 
+                "name": "Wall Width", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Width of the pattern that forms the base layer of the purge wall", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallBasePatternWidth", 
+                "max": 20.0, 
+                "min": 0.0, 
+                "name": "Base Pattern Width", 
+                "step": 1.0, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Extrusion width on the purge wall's base layer", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallBaseFilamentWidth", 
+                "max": 10, 
+                "min": 0, 
+                "name": "Base Extrusion Width", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "The purge wall is printed on a base layer. Lines of the base layer will be printed closer together at lower values and farther apart at higher values.", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallBasePatternLength", 
+                "max": 20.0, 
+                "min": 0, 
+                "name": "Base Pattern Length", 
+                "step": 1.0, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Width of the diamond pattern that forms the purge wall", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallPatternWidth", 
+                "max": 20.0, 
+                "min": 0.0, 
+                "name": "Wall Pattern Width", 
+                "step": 1.0, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Maximum length of the side of the purge wall", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeBucketSide", 
+                "max": 20.0, 
+                "min": 0.0, 
+                "name": "Side Length", 
+                "step": 1.0, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Maximum length of the front of the purge wall", 
+                "group": "Purge Wall Settings", 
+                "id": "purgeWallXLength", 
+                "max": 100.0, 
+                "min": 0.0, 
+                "name": "Front Wall Length", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "multiMaterialPrinting"
+                ], 
+                "description": "Print your model with purge walls. Recommended for dual extrusion prints.", 
+                "group": "Purge Wall Settings", 
+                "id": "doPurgeWall", 
+                "name": "Purge Walls", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "Starting height of the extruder relative to the build plate", 
+                "id": "bedZOffset", 
+                "max": 10.0, 
+                "min": 0.0, 
+                "name": "Extra Z Offset", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.01, 
+                "description": "Minimum layer height supported", 
+                "id": "minLayerHeight", 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "Plastic volume for layers thicker than this threshold will be multiplied by thickLayerVolumeMultiplier", 
+                "id": "thickLayerThreshold", 
+                "type": "Scalar", 
+                "unit": "mm"
+            }, 
+            {
+                "default": 1.0, 
+                "description": "Multiply the volume for layers thicker than thickLayerThreshold by this value", 
+                "id": "thickLayerVolumeMultiplier", 
+                "type": "Scalar"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "id": "computeVolumeLike2_1_0", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "Initial position of all axes of the bot", 
+                "id": "startPosition", 
+                "type": "BotPosition", 
+                "widget": ""
+            }, 
+            {
+                "default": "", 
+                "description": "TODO", 
+                "id": "startGcode", 
+                "name": "TODO - WidgetName", 
+                "type": "string", 
+                "widget": "lineedit"
+            }, 
+            {
+                "default": "", 
+                "description": "TODO", 
+                "id": "endGcode", 
+                "name": "TODO - WidgetName", 
+                "type": "string", 
+                "widget": "lineedit"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "doPrintProgress", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "default": false, 
+                "description": "Select to use active cooling fan during a print", 
+                "id": "doFanCommand", 
+                "name": "Use Active Cooling", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "default": 0.5, 
+                "description": "Active cooling fan power", 
+                "id": "fanDefaultSpeed", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "Fan Power", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "unit": "% Max Power", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "Turning the fan off during long travel moves reduces stringing. This value specifies whether this technique is applied", 
+                "id": "doFanModulation", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doFanModulation", 
+                "description": "A time window used for modulating the fan. Smaller values cause the fan to switch on and off more frequently. Larger values will ignore some fast and short travel moves to switch the fan less frequently", 
+                "id": "fanModulationWindow", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doFanModulation", 
+                "description": "This is the fraction of time in the fan modulation time window that must be spent extruding (not traveling) for the fan to turn on. Smaller values prefer the fan to be on, larger values prefer the fan to be off. Setting this value to 0.0 is equivalent to having the fan be always on, and setting it to 1.0 is equivalent to having the fan be always off.", 
+                "id": "fanModulationThreshold", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "dependency": "doFanCommand", 
+                "description": "Layer at which to start using active cooling", 
+                "id": "fanLayer", 
+                "max": 5000, 
+                "min": 0, 
+                "name": "Fan Layer", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "deviceSettings"
+                ], 
+                "description": "Minimum time for printing a layer.  Layers that will print faster than the minimum will be slowed down. Minimum Layer Duration allows the plastic adequate time to cool before applying the next layer.", 
+                "id": "minLayerDuration", 
+                "max": 30.0, 
+                "min": 0.0, 
+                "name": "Minimum Layer Duration", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "debug_value": 0.0, 
+                "description": "Distance of the flick that is done before retracting", 
+                "id": "flickDistance", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "debug_value": 0.0, 
+                "description": "If a flick of at least this length cannot be made, don't flick", 
+                "id": "flickMinDistance", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "debug_value": 0.0, 
+                "default": false, 
+                "description": "If true, exactly follow the path that was just printed backwards for flickDistance when doing a flick. If false, try to make a single move flickDistance long in the opposite direction of the last segment of the path, and fall back to following the path exactly if such a move would cross the outline.", 
+                "id": "flickBackTrace", 
+                "max": 10, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "boolean", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "Enable precise control of speed at the end of paths to reduce stringing. Only works for 5th generation machines", 
+                "id": "doExponentialDeceleration", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": 20, 
+                "description": "Number of discrete speeds computed for exponential deceleration. Larger numbers give smoother motion at the expense of larger files", 
+                "id": "exponentialDecelerationSegmentCount", 
+                "max": 50, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "Slow to this ratio of the initial speed by the end of exponential deceleration", 
+                "id": "exponentialDecelerationRatio", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "Exponential deceleration will not cause the speed to fall below this value", 
+                "id": "exponentialDecelerationMinSpeed", 
+                "max": 150.0, 
+                "min": 0.0, 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm/s"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "defaultExtruder", 
+                "max": 1, 
+                "min": 0, 
+                "name": "Default Extruder for Single Extruder Printing", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "", 
+                "id": "extruderProfiles", 
+                "name": "TODO - WidgetName", 
+                "type": "ExtruderVector", 
+                "widget": ""
+            }, 
+            {
+                "description": "", 
+                "id": "extrusionProfiles", 
+                "name": "TODO - WidgetName", 
+                "profile_ids": [
+                    "firstLayer", 
+                    "firstLayerRaft", 
+                    "insets", 
+                    "infill", 
+                    "roofSurfaceFills", 
+                    "floorSurfaceFills", 
+                    "sparseRoofSurfaceFills", 
+                    "outlines", 
+                    "raftBase", 
+                    "raft", 
+                    "bridges"
+                ], 
+                "type": "ExtrusionMap", 
+                "widget": ""
+            }, 
+            {
+                "description": "Breakaway support can cause horizontal defects to appear aligned with the top of supports due to Z axis backlash. These defects can be eliminated by compensating for the specified distance along the Z axis.", 
+                "id": "backlashZ", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "Backlash Distance for the Z Axis", 
+                "step": 0.005, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "doBacklashCompensation", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doBacklashCompensation", 
+                "description": "TODO", 
+                "id": "backlashX", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doBacklashCompensation", 
+                "description": "TODO", 
+                "id": "backlashY", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doBacklashCompensation", 
+                "description": "TODO", 
+                "id": "backlashFeedback", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doBacklashCompensation", 
+                "description": "TODO", 
+                "id": "backlashEpsilon", 
+                "max": 1.0, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.005, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Select to print areas with small details and tight curves at a lower speed", 
+                "id": "doDynamicSpeed", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "The distance along the path we see at one time. Smaller values are good for only slowing down around small, tight details. Larger values will detect detail over a longer distance, slow down earlier, and speed up later, but can miss some very small details.", 
+                "id": "dynamicSpeedDetectionWindow", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "degrees per mm", 
+                "id": "dynamicSpeedCurvatureThreshold", 
+                "max": 180, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "How much slower than normal speed to print small, tight details", 
+                "id": "dynamicSpeedSlowdownRatio", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "If true, gradually slow down over the detection window. If false, immediately change to the slower speed.", 
+                "id": "doDynamicSpeedGradually", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "To smoothly transition from regular print speed to slower dynamic slowdown we do so over a certain distance. This setting configures that distance in millimeters. This value is rounded to the nearest increment of splitMinimumDistance.", 
+                "id": "dynamicSpeedTransitionWindow", 
+                "max": 50.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "When we transition between speeds, we can do linearly or using an S-like curve. This value controls the amount the curve is shaped like a line vs the amount it is S-like. A value of 0 is linear transition, and a value of 1 is an S-like transition. Values between 0 and 1 control the amount of S-like-ness.", 
+                "id": "dynamicSpeedTransitionShape", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "Toggles dynamic speed for the outermost shell", 
+                "id": "doDynamicSpeedOutermostShell", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doDynamicSpeed", 
+                "description": "Toggles dynamic speed for shells other than the othermost", 
+                "id": "doDynamicSpeedInteriorShells", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "doSplitLongMoves", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doSplitLongMoves", 
+                "description": "TODO", 
+                "id": "splitMinimumDistance", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "TODO", 
+                "id": "centerX", 
+                "max": 300.0, 
+                "min": -300.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "TODO", 
+                "id": "centerY", 
+                "max": 300.0, 
+                "min": -300.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "group": "Bridging", 
+                "id": "doBridging", 
+                "name": "Bridging", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "description": "Select to print support under all bridges", 
+                "group": "Bridging", 
+                "id": "doSupportUnderBridges", 
+                "name": "Support Bridges", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "dependency": "doBridging", 
+                "description": "TODO", 
+                "id": "bridgeAnchorWidth", 
+                "max": 5.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doBridging", 
+                "description": "TODO", 
+                "id": "bridgeAnchorMinimumLength", 
+                "max": 10.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "supportsAndBridging"
+                ], 
+                "dependency": "doBridging", 
+                "description": "A bridge is the underside of a print that is supported at both ends but not in the middle. If a bridge is longer than the length set here, support will be printed underneath.", 
+                "group": "Bridging", 
+                "id": "bridgeMaximumLength", 
+                "max": 100.0, 
+                "min": 0.0, 
+                "name": "Maximum Bridge Length", 
+                "step": 0.1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "dependency": "doBridging", 
+                "description": "TODO", 
+                "id": "bridgeSpacingMultiplier", 
+                "max": 1.5, 
+                "min": 0.5, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": true, 
+                "description": "TODO", 
+                "hidden": true, 
+                "id": "doOutlines", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": true, 
+                "description": "TODO", 
+                "id": "doInsets", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": true, 
+                "description": "TODO", 
+                "id": "doInfills", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": true, 
+                "description": "TODO", 
+                "id": "doAnchor", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": true, 
+                "description": "TODO", 
+                "id": "doPutModelOnPlatform", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": false, 
+                "description": "TODO", 
+                "id": "doPrintLayerMessages", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "minSpeedMultiplier", 
+                "max": 1.0, 
+                "min": 0.0, 
+                "name": "TODO - WidgetName", 
+                "step": 0.01, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "infill"
+                ], 
+                "default": "hexagonal", 
+                "description": "Infill pattern for your print. The diamond pattern is strongest.", 
+                "id": "sparseInfillPattern", 
+                "name": "Infill Pattern", 
+                "type": "string", 
+                "validStrings": [
+                    "linear", 
+                    "hexagonal", 
+                    "moroccanstar", 
+                    "catfill", 
+                    "sharkfill", 
+                    "diamond", 
+                    "diamond (fast)"
+                ], 
+                "widget": "combobox"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "commentOpen", 
+                "name": "TODO - WidgetName", 
+                "type": "string", 
+                "widget": "lineedit"
+            }, 
+            {
+                "description": "TODO", 
+                "id": "commentClose", 
+                "name": "TODO - WidgetName", 
+                "type": "string", 
+                "widget": "lineedit"
+            }, 
+            {
+                "description": "Layers to print for roof.  Overrides Roof Thickness", 
+                "id": "roofLayerCount", 
+                "max": 5000, 
+                "min": 0, 
+                "name": "Roof Layer Count", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "See roofSurfaceThickness.  Overrides roofSurfaceThickness if set", 
+                "id": "roofSurfaceLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "description": "See roofSolidThickness.  Overrides roofSolidThickness if set", 
+                "id": "roofSolidLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "description": "Layers to print for floor.  Overrides Floor Thickness", 
+                "id": "floorLayerCount", 
+                "max": 5000, 
+                "min": 0, 
+                "name": "Floor Layer Count", 
+                "step": 1, 
+                "type": "unsigned_integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "See floorSurfaceThickness.  Overrides floorSurfaceThickness if set", 
+                "id": "floorSurfaceLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "description": "See floorSolidThickness.  Overrides floorSolidThickness if set", 
+                "id": "floorSolidLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "id": "supportRoofSurfaceLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "id": "supportRoofSolidLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "id": "supportFloorSurfaceLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "id": "supportFloorSolidLayerCount", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "default": 0, 
+                "description": "Orientation angle offset applied to the orientation range", 
+                "id": "infillOrientationOffset", 
+                "max": 359, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 90, 
+                "description": "Orientation angle to rotate per layer for linear infill in degrees", 
+                "id": "infillOrientationInterval", 
+                "max": 359, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 90, 
+                "description": "Orientation angle range (inclusive) for linear infill in degrees", 
+                "id": "infillOrientationRange", 
+                "max": 359, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0, 
+                "description": "Orientation angle offset applied to the orientation range", 
+                "id": "solidFillOrientationOffset", 
+                "max": 359, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 90, 
+                "description": "Orientation angle to rotate per layer for solid fill in degrees", 
+                "id": "solidFillOrientationInterval", 
+                "max": 359, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 90, 
+                "description": "Orientation angle range (inclusive) for solid fill in degrees", 
+                "id": "solidFillOrientationRange", 
+                "max": 359, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "integer", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 1.0, 
+                "description": "TODO", 
+                "id": "anchorWidth", 
+                "max": 10, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": 0.0, 
+                "description": "Amount of feedstock to extrude at start of anchor (mm)", 
+                "id": "anchorExtrusionAmount", 
+                "max": 10, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "description": "Speed at which to make the anchor blob", 
+                "id": "anchorExtrusionSpeed", 
+                "max": 10, 
+                "min": 0, 
+                "name": "TODO - WidgetName", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm/s", 
+                "widget": "spinbox"
+            }, 
+            {
+                "default": false, 
+                "description": "Output json toolpath file instead of gcode", 
+                "hidden": false, 
+                "id": "jsonToolpathOutput", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": false, 
+                "description": "Output progress in json format", 
+                "hidden": true, 
+                "id": "jsonProgress", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": false, 
+                "description": "Output json metadata file", 
+                "hidden": true, 
+                "id": "metadataOutput", 
+                "name": "TODO - WidgetName", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "default": ".", 
+                "description": "Output file path for toolpath and metadata", 
+                "hidden": true, 
+                "id": "outputFilepath", 
+                "name": "TODO - WidgetName", 
+                "type": "string", 
+                "widget": "lineedit"
+            }, 
+            {
+                "default": "", 
+                "description": "The path to the config file. This is set automatically when passing -c on the command line. You should not need to edit this", 
+                "hidden": true, 
+                "id": "configPath", 
+                "type": "string"
+            }, 
+            {
+                "description": "Avoid using significantly more than this many megabytes of memory", 
+                "id": "memoryThreshold", 
+                "type": "unsigned_integer"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "default": false, 
+                "description": "Start each layer from the object closest to a fixed location, rather than closest to where the previous layer ended", 
+                "id": "doFixedLayerStart", 
+                "name": "Fixed Layer Starting Point", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "default": 0, 
+                "description": "X position of the point near which to start a layer when Fixed Layer Starting Pt is true", 
+                "gui_dependency": "doFixedLayerStart", 
+                "gui_logic": "true", 
+                "id": "fixedLayerStartX", 
+                "max": 150, 
+                "min": -150, 
+                "name": "Layer Starting Point (X)", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "default": 0, 
+                "description": "Y position of the point near which to start a layer when Fixed Layer Starting Pt is true", 
+                "gui_dependency": "doFixedLayerStart", 
+                "gui_logic": "true", 
+                "id": "fixedLayerStartY", 
+                "max": 153, 
+                "min": -153, 
+                "name": "Layer Starting Point (Y)", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "mm", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "default": true, 
+                "description": "Start each shell at the vertex farmost in the direction specified by Fixed Shell Starting Point. If not selected, the starting point will be chosen for optimal ordering, and may cause the zipper to be a different place on every layer.", 
+                "id": "doFixedShellStart", 
+                "name": "Fixed Shell Starting Point", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "default": 215, 
+                "description": "Controls roughly where the zipper will be placed. 0 points toward the back of the printer. The zipper clockwise as the angle increases.", 
+                "gui_dependency": "doFixedShellStart", 
+                "gui_logic": "true", 
+                "id": "fixedShellStartDirection", 
+                "max": 359, 
+                "min": 0, 
+                "name": "Shell Starting Point (degrees)", 
+                "step": 1, 
+                "type": "Scalar", 
+                "unit": "degree", 
+                "widget": "spinbox"
+            }, 
+            {
+                "categories": [
+                    "modelProperties"
+                ], 
+                "debug_value": false, 
+                "description": "Use advanced path planning techniques to minimize stringing", 
+                "id": "doAdvancedPathPlanning", 
+                "name": "Use Advanced Path Planning", 
+                "type": "boolean", 
+                "widget": "checkbox"
+            }
+        ], 
+        "mode": "aggregate"
+    }, 
+    "boolean": {
+        "cpp_type": "bool", 
+        "json_type": "boolean", 
+        "mode": "primitive"
+    }, 
+    "integer": {
+        "cpp_type": "int", 
+        "json_type": "number", 
+        "mode": "primitive"
+    }, 
+    "string": {
+        "cpp_type": "std::string", 
+        "json_type": "string", 
+        "mode": "primitive"
+    }, 
+    "unsigned_integer": {
+        "cpp_type": "unsigned int", 
+        "json_type": "number", 
+        "mode": "primitive"
+    }, 
+    "version": 1
+}

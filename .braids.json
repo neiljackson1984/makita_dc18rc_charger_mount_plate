@@ -1,0 +1,10 @@
+{
+  "config_version": 1,
+  "mirrors": {
+    "braids/makerbot_printable_maker": {
+      "url": "https://github.com/neiljackson1984/makerbot_printable_maker.git",
+      "branch": "master",
+      "revision": "7202c3649da56218940a708f3272b320fbd974dc"
+    }
+  }
+}

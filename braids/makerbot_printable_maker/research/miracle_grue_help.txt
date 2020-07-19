@@ -1,0 +1,63 @@
+
+It is pitch black. You are likely to be eaten by a grue.
+You are using Miracle Grue version 5.31.0
+This program translates a 3d model file in STL, OBJ, and THING 
+format to GCODE or JSON toolpath for a 3D printer.
+
+Another fine MakerBot Industries product!
+
+Usage: miracle_grue [OPTIONS] model
+Options:
+  -h [ --help ]                   Write this help message and exit
+                                  
+  --help-all                      Display additional command line options
+                                  
+  -a [ --accel-config ] accelconf Path to an accel configuration file
+                                  
+  -c [ --config ] configfile      Configuration file in JSON format
+                                  
+  --gcode-toolpath-output file    Write gcode format toolpath to <file>
+                                  
+  --json-toolpath-output file     Write json format toolpath to <file>
+                                  
+  --metadata-output file          Place the metadata output in <file>
+                                  
+  -v [ --version ]                Output the version number
+                                  
+Additional Options:
+  --basic-slice-svg-dir empty directory Write gcode format toolpath to <file>
+                                        
+  --version-json                        Output the version number formatted as 
+                                        JSON
+                                        
+  --config-schema                       Output json that describes the 
+                                        structure of the configuration file
+                                        
+  --regurgitate-config                  Output the configuration file after 
+                                        processing. Keys not described by the 
+                                        schema are omitted, and expected but 
+                                        unspecified keys are set to null or the
+                                        default value, as appropriate
+                                        
+  -j [ --json-progress ]                Display progress messages in JSON 
+                                        format
+                                        
+  -m [ --memory-threshold ] threshold m|g
+                                        Try to avoid using more than this much 
+                                        memory by storing intermediate data on 
+                                        disk. Must be an integer followed by m 
+                                        or g, megabytes and gigabytes, 
+                                        respectively
+                                        
+  --log-file file                       File where output from slicing progress
+                                        is noted
+                                        
+  --log-level level                     Verbosity of the slicer output log. 
+                                        Must be one of ERROR, WARNING, INFO, 
+                                        FINE, FINER, FINEST or E, W, I, F, FF, 
+                                        FFF respectively
+                                        
+  --log-module module                   Modules to include in the slicer output
+                                        log
+                                        
+  --no-log-format                       Disables log message formatting.

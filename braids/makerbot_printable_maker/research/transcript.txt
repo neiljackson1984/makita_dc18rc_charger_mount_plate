@@ -1,0 +1,48 @@
+"C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\python3.4.exe" 
+    "C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\sliceconfig" 
+        -j 
+        -i C:\Users\Admin\AppData\Local\Temp\tmp-608888ouRttbxIqpP\1-big.thing 
+        -o C:\Users\Admin\AppData\Local\Temp\tmp-608888ouRttbxIqpP\1-big.makerbot 
+        -t C:\Users\Admin\AppData\Local\Temp\tmp-60888TV1sjRmw4IkP 
+        slice 
+        -d replicator_5 
+        -e mk13 
+        -a pla 
+        -pm balanced 
+        -u {}
+
+"C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\miracle_grue.exe" 
+    -j 
+    --metadata-output C:\Users\Admin\AppData\Local\Temp\tmpzjtzdjs0 
+    --json-toolpath-output C:\Users\Admin\AppData\Local\Temp\tmpbjluywwk.jsontoolpath 
+    -c C:\Users\Admin\AppData\Local\Temp\tmpk3k_6d74 
+    C:\Users\Admin\AppData\Local\Temp\tmp-608888ouRttbxIqpP\1-big.thing
+    
+    
+    
+    
+    
+    
+    
+    
+"C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\python3.4.exe" 
+    "C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\sliceconfig" 
+    -j 
+    -i C:\Users\Admin\AppData\Local\Temp\tmp-6088876HDXTUX752i\1-big.thing 
+    -o C:\Users\Admin\AppData\Local\Temp\tmp-6088876HDXTUX752i\1-big.makerbot 
+    -t C:\Users\Admin\AppData\Local\Temp\tmp-60888emY9MckKAsG1 
+    slice 
+    -d replicator_5 
+    -e mk13 
+    -a pla 
+    -pm balanced 
+    -u "{\"modelShellProfiles.extent.numberOfShells\":5}"
+
+"C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\miracle_grue.exe" 
+    -j --metadata-output C:\Users\Admin\AppData\Local\Temp\tmp_xkbulqc 
+    --json-toolpath-output C:\Users\Admin\AppData\Local\Temp\tmp_2txc7t_.jsontoolpath 
+    -c C:\Users\Admin\AppData\Local\Temp\tmp1gl6qme_ 
+    C:\Users\Admin\AppData\Local\Temp\tmp-6088876HDXTUX752i\1-big.thing
+    
+    
+    "C:\Program Files\MakerBot\MakerBotPrint\resources\app.asar.unpacked\node_modules\MB-support-plugin\mb_ir\MakerWare\miracle_grue.exe" -j --metadata-output C:\Users\Admin\AppData\Local\Temp\tmplenf6yfx --json-toolpath-output C:\Users\Admin\AppData\Local\Temp\tmp469wx95k.jsontoolpath -c C:\Users\Admin\AppData\Local\Temp\tmpev52p265 C:\Users\Admin\AppData\Local\Temp\tmp-60888GCF0J6l6K3jU\1-big.thing

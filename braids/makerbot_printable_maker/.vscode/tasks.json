@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "makeAndFail",
+            "type": "shell",
+            "command": "make && exit 1", //we explicitly return a non-zero error code to prevent the vs code debugger from launching when this build task is used as the "preLaunchTask" of a vs code debugging configuration.
+            "group": "build"
+        }
+    ]
+}
