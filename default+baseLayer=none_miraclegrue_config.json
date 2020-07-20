@@ -1,0 +1,640 @@
+{
+    "version": "5.31.0",
+    "_bot": "replicator_5",
+    "_extruders": [
+        "mk13"
+    ],
+    "_materials": [
+        "pla"
+    ],
+    "adjacentFillLeakyConnections": true,
+    "adjacentFillLeakyDistanceRatio": 1.4,
+    "areaToTaperSupportsIn": 9223372036854775807,
+    "areaToTaperSupportsOut": 0.0,
+    "backlashEpsilon": 0.05,
+    "backlashFeedback": 0.9,
+    "backlashX": 0.0,
+    "backlashY": 0.09,
+    "baseLayer": "none",
+    "bedZOffset": 0.0,
+    "bridgeAnchorMinimumLength": 0.8,
+    "bridgeAnchorWidth": 0.8,
+    "bridgeMaximumLength": 80.0,
+    "brimsBaseWidth": 2.5,
+    "brimsModelOffset": 0.0,
+    "brimsOverlapWidth": 1.5,
+    "coarseness": 0.0001,
+    "convertSparsePulseValue": 0.0,
+    "defaultExtruder": 0,
+    "defaultSupportMaterial": 0,
+    "doBacklashCompensation": false,
+    "doBreakawaySupport": false,
+    "doBridging": true,
+    "doBrims": false,
+    "doExponentialDeceleration": true,
+    "doExternalSpurs": true,
+    "doFanCommand": true,
+    "doFanModulation": true,
+    "doFixedLayerStart": false,
+    "doFixedShellStart": true,
+    "doInternalSpurs": false,
+    "doMinfill": false,
+    "doMixedRaft": false,
+    "doMixedSupport": false,
+    "doPaddedBase": false,
+    "doPurgeEarlyEnd": true,
+    "doPurgeWall": false,
+    "doRaft": false,
+    "doRateLimit": false,
+    "doSplitLongMoves": false,
+    "doSupport": false,
+    "doSupportEdgeFollow": false,
+    "doSupportUnderBridges": false,
+    "doZHopAndRetractCombo": false,
+    "exponentialDecelerationMinSpeed": 0.0,
+    "exponentialDecelerationRatio": 0.375,
+    "exponentialDecelerationSegmentCount": 10,
+    "extruderProfiles": [{
+            "defaultTemperature": 215,
+            "extrusionProfiles": {
+                "base_layer_surface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 50
+                },
+                "bridges": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 40.0
+                },
+                "brims": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 10.0
+                },
+                "floor_surface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "halfVolumeInfill": {
+                    "extrusionVolumeMultiplier": 0.5,
+                    "fanSpeed": 0.5,
+                    "feedrate": 110.0
+                },
+                "insets": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "low_speed_shells": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 30
+                },
+                "minfillSparse": {
+                    "extrusionVolumeMultiplier": 1.2,
+                    "feedrate": 110.0,
+                    "oozePathExtensionDistance": 0.75
+                },
+                "outlines": {
+                    "fanSpeed": 0.95,
+                    "feedrate": 20
+                },
+                "purge": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 100
+                },
+                "raft_base": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 10.0
+                },
+                "raft_interface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "raft_surface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90.0
+                },
+                "roof_surface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "solid": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "sparse": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "sparseRoofSurfaceFills": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "spurs": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 20
+                },
+                "support_floor_surface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 10.0
+                },
+                "support_roof_surface": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "support_solid": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                },
+                "support_sparse": {
+                    "fanSpeed": 0.5,
+                    "feedrate": 90
+                }
+            },
+            "extrusionVolumeMultiplier": 1.0,
+            "feedDiameter": 1.77,
+            "idleTemperature": 215,
+            "nozzleDiameter": 0.4,
+            "oozeFeedstockDistance": 0.1,
+            "preOozeFeedstockDistance": 0.1,
+            "restartExtraDistance": 0.1,
+            "restartRate": 30,
+            "retractDistance": 0.5,
+            "retractRate": 50,
+            "toolchangeRestartDistance": 0,
+            "toolchangeRestartRate": 0,
+            "toolchangeRetractDistance": 0,
+            "toolchangeRetractRate": 0
+        }
+    ],
+    "fanDefaultSpeed": 0.5,
+    "fanLayer": 1,
+    "fanModulationThreshold": 0.5,
+    "fanModulationWindow": 0.1,
+    "fixedLayerStartX": 0,
+    "fixedLayerStartY": 0,
+    "fixedShellStartDirection": 215,
+    "floorSolidThickness": 0,
+    "floorSurfaceThickness": 0.8,
+    "floorThickness": 0.8,
+    "horizontalInset": 0,
+    "layerHeight": 0.2,
+    "leakyConnectionsAdjacentDistance": 0.8,
+    "lowSpeedShellMin": 20,
+    "maxConnectionLength": 10.0,
+    "maxSpurWidth": 0.5,
+    "minLayerDuration": 5,
+    "minRaftBaseGap": 10.0,
+    "minSparseRegionArea": 0.1,
+    "minSpeedMultiplier": 0.3,
+    "minSpurLength": 0.34,
+    "minSpurWidth": 0.12,
+    "minThickInfillImprovement": 1.0,
+    "minimumMoveDistance": 0.01,
+    "modelFillProfiles": {
+        "base_layer_surface": {
+            "density": 1.0,
+            "extrusionProfile": "base_layer_surface",
+            "extrusionWidth": 0.4,
+            "linearFillGroupDensity": 1,
+            "linearFillGroupSize": 1,
+            "minPathLength": 0.0,
+            "orientationInterval": 90,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "bridge": {
+            "density": 1.0,
+            "extrusionProfile": "bridges",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "bridge_fill"
+        },
+        "floor_surface": {
+            "density": 1.0,
+            "extrusionProfile": "floor_surface",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.1,
+            "orientationInterval": 90,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "rafted_floor": {
+            "density": 1.0,
+            "extrusionProfile": "rafted_floor",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "roof_surface": {
+            "density": 1.0,
+            "extrusionProfile": "roof_surface",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.1,
+            "orientationInterval": 90,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "solid": {
+            "considerFillPathWidth": true,
+            "density": 1.0,
+            "extrusionProfile": "solid",
+            "extrusionWidth": 0.4,
+            "minPathLength": 1.0,
+            "orientationInterval": 90,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "sparse": {
+            "density": 0.1,
+            "diamondFillTurnDistance": 0.4,
+            "diamondFillZigZagOverlap": 0.1,
+            "extrusionProfile": "sparse",
+            "extrusionWidth": 0.4,
+            "maxThickness": 0.4,
+            "minPathLength": 1.4,
+            "orientationInterval": 1,
+            "orientationOffset": 0,
+            "orientationRange": 2,
+            "pattern": "diamond (fast)"
+        },
+        "supported_floor": {
+            "density": 1.0,
+            "extrusionProfile": "rafted_floor",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        }
+    },
+    "modelShellProfiles": {
+        "base_layer_surface": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.7,
+            "innerExtrusionProfile": "raft_base",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 1,
+            "outerExtrusionProfile": "raft_base"
+        },
+        "extent": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.55,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 2,
+            "outerExtrusionProfile": "outlines"
+        },
+        "floor_surface": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        },
+        "roof_surface": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        },
+        "solid": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        },
+        "sparse": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        }
+    },
+    "numberOfBrims": 5,
+    "numberOfInternalBrims": 5,
+    "paddedBaseOutlineOffset": -0.5,
+    "pauseHeights": [],
+    "purgeWallBaseFilamentWidth": 2.0,
+    "purgeWallWidth": 1,
+    "raftBaseInfillShellSpacingMultiplier": 0.0,
+    "raftBrimsSpacing": 1.0,
+    "raftExtraOffset": 0.0,
+    "raftFillProfiles": {
+        "base": {
+            "considerFillPathWidth": true,
+            "density": 0.7,
+            "extrusionProfile": "raft_base",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 0,
+            "pattern": "raft_base_fill",
+            "raftBaseRunGapRatio": 0.8,
+            "raftBaseRunLength": 15.0
+        },
+        "interface": {
+            "density": 0.3,
+            "extrusionProfile": "raft_interface",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 90,
+            "orientationOffset": 45,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "purge_base": {
+            "density": 0.5,
+            "extrusionProfile": "raft_base",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 0.0,
+            "orientationOffset": 45.0,
+            "orientationRange": 360.0,
+            "pattern": "linear"
+        },
+        "surface": {
+            "density": 1.0,
+            "extrusionProfile": "raft_surface",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.0,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 0,
+            "pattern": "local_no_warp"
+        }
+    },
+    "raftInterfaceShells": 0,
+    "raftModelShellsSpacing": 0.0,
+    "raftModelSpacing": 0.0,
+    "raftProfiles": {
+        "base": {
+            "ZOffset": 0.0,
+            "extruderID": 0,
+            "firstSurfaceZOffset": 0.0,
+            "layerThickness": 0.3,
+            "layerWidth": 2.5,
+            "numberOfLayers": 1,
+            "outsetFromModelEdge": 4
+        },
+        "interface": {
+            "ZOffset": -0.14,
+            "extruderID": 0,
+            "firstSurfaceZOffset": 0.0,
+            "layerThickness": 0.27,
+            "layerWidth": 0.4,
+            "numberOfLayers": 2,
+            "outsetFromModelEdge": 0
+        },
+        "purge_base": {
+            "ZOffset": 0.0,
+            "extruderID": 0,
+            "firstSurfaceZOffset": 0.0,
+            "layerThickness": 0.4,
+            "layerWidth": 1.4,
+            "numberOfLayers": 2,
+            "outsetFromModelEdge": 1
+        },
+        "surface": {
+            "ZOffset": -0.03,
+            "extruderID": 0,
+            "firstSurfaceZOffset": 0.0,
+            "layerThickness": 0.27,
+            "layerWidth": 0.4,
+            "numberOfLayers": 3,
+            "outsetFromModelEdge": 4
+        }
+    },
+    "raftShellProfiles": {
+        "base": {
+            "doExternalSpurs": true,
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.5,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.1,
+            "innerExtrusionProfile": "raft_base",
+            "insetDistanceMultiplier": 0.4,
+            "numberOfShells": 3,
+            "outerExtrusionProfile": "raft_base"
+        },
+        "interface": {
+            "doExternalSpurs": true,
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.55,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 0.45,
+            "numberOfShells": 2,
+            "outerExtrusionProfile": "outlines"
+        },
+        "purge_base": {
+            "doExternalSpurs": true,
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.6,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        },
+        "surface": {
+            "doExternalSpurs": true,
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.5,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.7,
+            "innerExtrusionProfile": "raft_base",
+            "insetDistanceMultiplier": 0.8,
+            "numberOfShells": 2,
+            "outerExtrusionProfile": "raft_base"
+        }
+    },
+    "raftedFloorThickness": 0,
+    "rateLimitBufferSize": 100,
+    "rateLimitMinSpeed": 10,
+    "rateLimitSpeedRatio": 0.3,
+    "rateLimitSplitBias": 0,
+    "rateLimitSplitMoveDistance": 2.5,
+    "rateLimitSplitRecursionDepth": 36,
+    "rateLimitTransmissionRate": 150,
+    "roofAnchorMargin": 0.4,
+    "roofSolidThickness": 0,
+    "roofSurfaceThickness": 0.8,
+    "roofThickness": 0.8,
+    "shellsLeakyConnections": true,
+    "splitMinimumDistance": 0.4,
+    "startPosition": {
+        "x": -125,
+        "y": -99,
+        "z": 0.2
+    },
+    "supportAngle": 68.0,
+    "supportExtraDistance": 0.5,
+    "supportFillProfiles": {
+        "base_layer_surface": {
+            "considerFillPathWidth": true,
+            "consistentOrder": false,
+            "density": 0.2,
+            "extrusionProfile": "support_sparse",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.4,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "floor_surface": {
+            "considerFillPathWidth": true,
+            "density": 0.99,
+            "extrusionProfile": "support_floor_surface",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.1,
+            "orientationInterval": 90,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "roof_surface": {
+            "considerFillPathWidth": true,
+            "density": 0.95,
+            "extrusionProfile": "support_roof_surface",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.1,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "solid": {
+            "considerFillPathWidth": true,
+            "density": 0.5,
+            "extrusionProfile": "support_solid",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.1,
+            "orientationInterval": 0,
+            "orientationOffset": 90,
+            "orientationRange": 360,
+            "pattern": "linear"
+        },
+        "sparse": {
+            "considerFillPathWidth": true,
+            "consistentOrder": false,
+            "density": 0.2,
+            "extrusionProfile": "support_sparse",
+            "extrusionWidth": 0.4,
+            "minPathLength": 0.4,
+            "orientationInterval": 0,
+            "orientationOffset": 0,
+            "orientationRange": 360,
+            "pattern": "linear"
+        }
+    },
+    "supportInteriorExtruder": 0,
+    "supportLayerHeight": 0.2,
+    "supportLeakyConnections": true,
+    "supportMinMorphArea": 0,
+    "supportModelSpacing": 0.4,
+    "supportMorphAngle": 69.2,
+    "supportRoofModelSpacing": 0.4,
+    "supportShellProfiles": {
+        "base_layer_surface": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.5,
+            "innerExtrusionProfile": "support_floor_surface",
+            "insetDistanceMultiplier": 0,
+            "numberOfShells": 1,
+            "outerExtrusionProfile": "support_floor_surface"
+        },
+        "extent": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 1,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        },
+        "floor_surface": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "support_floor_surface",
+            "insetDistanceMultiplier": 1.0,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "support_floor_surface"
+        },
+        "roof_surface": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0.7,
+            "innerExtrusionProfile": "support_roof_surface",
+            "insetDistanceMultiplier": 1.0,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "support_roof_surface"
+        },
+        "solid": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1.0,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        },
+        "sparse": {
+            "doInternalSpurs": false,
+            "extrusionWidth": 0.4,
+            "firstShellOffset": 0.5,
+            "infillShellSpacingMultiplier": 0,
+            "innerExtrusionProfile": "insets",
+            "insetDistanceMultiplier": 1.0,
+            "numberOfShells": 0,
+            "outerExtrusionProfile": "outlines"
+        }
+    },
+    "supportSolidExpansionOutset": 0.0,
+    "supportTaperAngle": 83.0,
+    "supportedFloorThickness": 0,
+    "travelSpeedXY": 150,
+    "travelSpeedZ": 23,
+    "useRelativeExtruderPositions": false,
+    "xScale": 1.0,
+    "yScale": 1.0,
+    "zScale": 1.0
+}
